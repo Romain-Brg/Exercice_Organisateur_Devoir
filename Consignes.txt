@@ -1,0 +1,22 @@
+Vous allez créer un programme permettant de gérer le travail personnel d'un étudiant. Ce programme permet d'enregistrer les différents devoirs au fur et à mesure et de proposer chaque jour à l'étudiant la liste des devoirs sur lesquels il doit travailler.
+
+1) Créer une classe Date composée d'un jour, d'un mois et d'une année. Créer les constructeurs nécessaires, utiliser une liste d'initialisation lorsque cela a du sens.
+
+2) Créer une classe Devoir ayant comme attribut : une matière, un intitulé, la date de début, la date de fin, une estimation du temps à y consacrer, un statut (non commencé, en cours, terminé). Créer les constructeurs ainsi que la méthode afficher.
+
+3) Créer une classe Organisateur contenant une liste de Devoir. Vous pouvez utiliser le conteneur List ou un vector. Vous utiliserez par la suite un itérateur pour parcourir ce conteneur.
+
+4) Créer un menu permettant 
+
+    d'ajouter plusieurs travaux personnels, 
+    de mettre à jour le temps à y consacrer ou le statut
+    d'afficher la liste des travaux personnels non terminés 
+
+5) Alors que certaines tâches peuvent être réalisées seul, certains de vos devoirs sont à réaliser en groupe avec d'autres étudiants. Il est nécessaire de pouvoir indiquer les personnes qui devront réaliser ces travaux avec vous. Créez une nouvelle classe pour ces travaux en groupe qui hérite de la classe Devoir,  Vous ajouterez à cette classe une liste de noms de personnes, ainsi que les constructeurs et un masquage de la méthode afficher pour que l'on puisse voir la liste des personnes du groupe.
+
+6) Mettre à jour le programme précédent pour qu'il puisse intégrer ce type de Travail. 
+
+    L'ensemble des tâches à réaliser devra être contenu dans un seul conteneur (devoir et travail en groupe). Pour pouvoir conserver des types différents dans le conteneur il est nécessaire de stocker non pas des objets mais des adresses d'objets. L'utilisation de l'allocation dynamique peut se révéler nécessaire.
+    Lorsque vous parcourerez cette liste pour afficher les tâches à réaliser, vous serez attentif au fait que la bonne méthode soit appelée en fonction du type d'objet sur lequel on se trouve (polymorphisme).
+
+Dans ce programme vous devez utiliser les notions suivantes : héritage, masquage, polymorphisme, iterateurs.
